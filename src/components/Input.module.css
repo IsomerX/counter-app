@@ -1,0 +1,46 @@
+:root{
+    --input__font: 'Montserrat', sans-serif;
+}
+
+.input{
+    background-color: #1e1f23;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    place-items: left;
+}
+
+input{
+    padding: 15px;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    color: #efc99d;
+    font-family: var(--input__font);
+}
+
+
+label{
+    color: #efc99d;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--input__font);
+}
+
+button{
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: #1e1f23;
+    background-color: #efc99d;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--input__font);
+}
+
+.input__field{
+    width: 100%;
+    display: grid;
+    gap: 10px;
+}
