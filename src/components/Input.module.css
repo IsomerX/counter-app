@@ -4,11 +4,16 @@
 
 .input{
     background-color: #1e1f23;
+    width: 70%;
     border-radius: 15px;
     padding: 20px;
     display: grid;
     gap: 20px;
     place-items: left;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 input{
@@ -28,7 +33,7 @@ label{
     font-family: var(--input__font);
 }
 
-button{
+.input button{
     border: none;
     border-radius: 15px;
     padding: 10px 20px;
@@ -43,4 +48,12 @@ button{
     width: 100%;
     display: grid;
     gap: 10px;
+}
+
+.input__backdrop{
+    position: fixed;
+    height: 100vh;
+    width: 100% !important;
+    backdrop-filter: blur(2px);
+    left: 0;
 }

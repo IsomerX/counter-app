@@ -1,0 +1,76 @@
+:root {
+    --counter__font: "Montserrat", sans-serif;
+}
+
+.counter {
+    color: white;
+    font-family: var(--counter__font);
+}
+
+.counter__container {
+    display: grid;
+    grid-template-areas:
+        "title title title count count"
+        "desc desc desc desc desc"
+        "buttons buttons buttons buttons buttons";
+    background-color: #1e1f23;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.counter__title {
+    grid-area: title;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #efc99d;
+}
+
+.counter__count {
+    grid-area: count;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1e1f23;
+    background-color: #efc99d;
+    border-radius: 15px;
+}
+
+.counter__description {
+    grid-area: desc;
+    font-size: 1rem;
+    color: #9c9286;
+}
+
+.buttons{
+    grid-area: buttons;
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter__inc {
+    background-color: #efc99d;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    /* height: 50px; */
+    width: 30%;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+.counter__dec {
+    border: 1px solid #efc99d;
+    background-color: transparent;
+    color: #efc99d;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    /* height: 50px; */
+    width: 30%;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
